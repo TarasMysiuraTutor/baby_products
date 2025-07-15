@@ -1,0 +1,10 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_1001_36606)">
+<rect width="50" height="50" rx="25" transform="matrix(-1 0 0 1 60 6)" fill="white" shape-rendering="crispEdges"/>
+<rect x="-0.5" y="0.5" width="49" height="49" rx="24.5" transform="matrix(-1 0 0 1 59 6)" stroke="#F1F1F1" shape-rendering="crispEdges"/>
+<g clip-path="url(#clip0_1001_36606)">
+<path d="M30.9197 31C30.9197 31.1743 30.9864 31.3489 31.1195 31.482L37.9377 38.3002C38.2041 38.5666 38.6355 38.5666 38.9017 38.3002C39.168 38.0338 39.1682 37.6023 38.9017 37.3361L32.5656 31L38.9017 24.6638C39.1682 24.3974 39.1682 23.966 38.9017 23.6998C38.6353 23.4335 38.2039 23.4333 37.9377 23.6998L31.1195 30.5179C30.9864 30.651 30.9197 30.8256 30.9197 31Z" fill="#BCBCBC"/>
+</g>
+</g>
+
+</svg>
