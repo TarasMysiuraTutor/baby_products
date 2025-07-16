@@ -360,10 +360,12 @@ background: rgba(236, 139, 255, 0.15);
 .hero{
   padding: 0;
 }
+
 .hero .container{
 padding-top: 0;
 padding-bottom: 0;
 }
+
 .slider {
   position: relative;
   text-align: center;
@@ -374,20 +376,21 @@ padding-bottom: 0;
 
 .slides .slide {
   /*все изображения справа друг от доруга*/
-  width: 20%;
+  width: сalc(100% / 6);
   float: left;
 }
 
 .slides .slider-inner {
-  width: 500%;
+  width: 600%;
 }
+
 .overflow {
   width: 100%;
   overflow: hidden;
 }
 
 .slider img{ 
-	width: 100%;
+	width: 1140px;
   height: 350px;
   /* обрезать по краям */
   object-fit: cover;
@@ -403,12 +406,14 @@ padding-bottom: 0;
   height: 50px;
   width: 50px;
 }
+
 /*настройка переключения и положения для левой стрелки*/
-#switch1:checked ~ .arrows label:nth-child(5),
+#switch1:checked ~ .arrows label:nth-child(6),
 #switch2:checked ~ .arrows label:nth-child(1),
 #switch3:checked ~ .arrows label:nth-child(2),
 #switch4:checked ~ .arrows label:nth-child(3),
-#switch5:checked ~ .arrows label:nth-child(4) {
+#switch5:checked ~ .arrows label:nth-child(4),
+#switch6:checked ~ .arrows label:nth-child(5) {
   background: url("../images/img/Slider_left.svg")
     center/cover no-repeat;
   float: left;
@@ -421,7 +426,8 @@ padding-bottom: 0;
 #switch2:checked ~ .arrows label:nth-child(3),
 #switch3:checked ~ .arrows label:nth-child(4),
 #switch4:checked ~ .arrows label:nth-child(5),
-#switch5:checked ~ .arrows label:nth-child(1) {
+#switch5:checked ~ .arrows label:nth-child(6),
+#switch6:checked ~ .arrows label:nth-child(1) {
   background: url("../images/img/Slider_right.svg")
     no-repeat center/cover;
   float: right;
@@ -433,6 +439,7 @@ label,
 a {
   cursor: pointer;
 }
+
 /*скрываетвсе radio-input*/
 input[type="radio"] {
   display: none;
@@ -456,6 +463,10 @@ input[type="radio"] {
 
 #switch5:checked ~ .slides .slider-inner {
   margin-left: -400%;
+}
+
+#switch6:checked ~ .slides .slider-inner {
+  margin-left: -500%;
 }
 
 .arrows {
@@ -487,6 +498,7 @@ input[type="radio"] {
 #switch3:checked ~ .dots label:nth-child(3),
 #switch4:checked ~ .dots label:nth-child(4),
 #switch5:checked ~ .dots label:nth-child(5) 
+#switch6:checked ~ .dots label:nth-child(6) 
 {
   background: #18a3dd;
   border-color: #18a3dd !important;
